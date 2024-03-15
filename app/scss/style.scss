@@ -1,0 +1,283 @@
+@import 'vars';
+@import 'global';
+body {
+    height: auto;
+}
+
+.wrapper {
+    background-image: url(../img/bg/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header_logo {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo_container {
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 310px;
+}
+
+.sloterra {
+    width: 1000px;
+    height: 1157px;
+    width: 100%;
+}
+
+.sloterra_girl {
+    position: relative;
+    position: absolute;
+    width: 1294px;
+    height: 1252px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bufer-box {
+    display: flex;
+    color: #10450C;
+    background-image: url(../img/bg/bg_promo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    line-height: 21.651px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(165%, -290%);
+    align-items: center;
+    padding: 10px 15px 13px 18px;
+    width: 290px;
+    height: 88px;
+    z-index: 1;
+}
+
+.text-promo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.promo-code {
+    padding-top: 10px;
+    color: #FFF500;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.icons-btn {
+    background-image: url(../img/button/btn-copy.svg);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 43px;
+    margin-left: 56px;
+    transition: transform 0.9s;
+}
+
+.icon-popup {
+    display: none;
+    position: absolute;
+}
+
+.icons-btn:hover+.icon-popup {
+    display: block;
+    right: 4px;
+    bottom: -15px;
+}
+
+.sloterra_girl_mob {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 552px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.container_btn {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    cursor: pointer;
+    animation: btn 2s infinite;
+    z-index: 100;
+}
+
+@keyframes btn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer__icons {
+    width: 870px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer__icons-item {
+    width: 120px;
+    margin-bottom: 6px;
+    margin-right: 25px;
+}
+
+.footer_copyright {
+    color: #FFF;
+    max-width: 870px;
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.bottom_leaf_img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 51vh;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 170px;
+    height: 170px;
+    background-image: url(../img/clever/clever.png);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 170px;
+    height: 170px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 170px;
+    height: 170px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 170px;
+    height: 170px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 170px;
+    height: 170px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 170px;
+    height: 170px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1500px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@import 'media';
